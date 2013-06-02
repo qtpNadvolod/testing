@@ -8,7 +8,7 @@ strEnvironmentFilePath = "C:\SkyDrive\QTP\Product Family - FFE\Data\FFE_EnvVaria
 environment.LoadFromFile(strEnvironmentFilePath)
 fn_FFM_createHealthMeterSpreadsheet environment("healthMeterDataSheetPath")
 fn_FFM_setEnvironmentVariable strEnvironmentFilePath, "healthMeterCurrentDataSheetPath", Environment("latestHealthMeterResults")
-
+'New comment here
 '*******************************************************************************************************************************************
 				                                           ' FUNCTIONS
 '*******************************************************************************************************************************************
@@ -20,7 +20,7 @@ fn_FFM_setEnvironmentVariable strEnvironmentFilePath, "healthMeterCurrentDataShe
 ' Updates:
 Function fn_FFM_createHealthMeterSpreadsheet(strExcelWorkbookPath)
 Dim excelApp,excelSheet,cell,objWorkbook1,strLocation
-
+		Set blah
         Set excelApp = CreateObject("Excel.Application")
         excelApp.Visible = True
         excelApp.DisplayAlerts = False
